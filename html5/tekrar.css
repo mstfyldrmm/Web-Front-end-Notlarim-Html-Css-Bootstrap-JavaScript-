@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: palegreen;
+    padding: 1.5rem;
+}
+
+.headerTitle {
+    text-align: center;
+    margin: 0;
+}
+
+.section {
+    margin: 2rem;
+    padding: 1rem 2rem;
+    color: #000;
+}
+
+.section-content {
+    padding: 1rem;
+    background-color: palegreen;
+    color: #000;
+}
+
+.section-yeteneklerim, .section-projeler {
+    list-style: none;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.section-projeler li {
+    margin-bottom: 1.25rem;
+}
+
+
+
+

@@ -1,0 +1,11 @@
+.error {
+    border: 5px red solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.success {
+    border: 5px solid greenyellow;
+    padding: 5px;
+    text-align: center;
+}

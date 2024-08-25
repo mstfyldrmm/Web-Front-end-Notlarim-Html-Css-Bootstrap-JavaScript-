@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .div1{
+            background-color: orangered;
+            height: 150px;
+            width: 25%;
+            color: wheat;
+            font-size: 2rem;
+            transition: 2s; /*tum degisimler 2s degisir*/
+            /*transition:color 1s, backround-color:3s
+            yazi 1 s degisirken arka plan rengi 3s degisir.
+            */
+            /*efek tipini degistirmek icin*/
+            transition: 2s ease-in-out;
+            /*
+            transition-delay:1s --> efekt uygulamadan once bekleme suresi
+            transition-timing-function:ease-out --> efekt tipi
+            transition: duration 3s;
+            transition-property:color, .. --> efektin uygulanacagi propertyler
+
+            */
+        }
+
+        .div1:hover{
+            background-color: chartreuse;
+            color: black;
+            width: 50%;
+        }
+
+        .div2 {
+            background-color: orangered;
+            height: 150px;
+            width: 25%;
+            color: wheat;
+            font-size: 2rem;
+            transition-delay: 1s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-property: width, background-color;
+        }
+
+        .div2:hover {
+            background-color: blue;
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">Merhaba</div>
+    <br>
+    <div class="div2">Merhaba</div>
+    </div>
+</body>
+</html>

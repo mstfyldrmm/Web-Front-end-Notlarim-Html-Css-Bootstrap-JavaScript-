@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    caption {
+      font-size: 32px;
+    }
+    table, #Tablo-1 td, #Tablo-1 th{
+      border: 1px solid blue;
+      border-collapse: collapse;
+    }
+    table #Tablo-2 td, #Tablo-2 th{
+      border: 1px solid blue;
+      border-collapse: collapse;
+    }
+    #Tablo-1 tr:nth-child(even) {
+      background-color: teal;
+    }
+    #Tablo-1 tr:nth-child(odd) {
+      background-color: purple;
+    }
+
+  </style>
+</head>
+<body>
+  <table id="Tablo-1">
+    <caption>Deneme tablosu</caption>
+    <tr>
+      <th>
+        Isim
+      </th>
+      <th>
+        Soyisim
+      </th>
+      <th>
+        Yas
+      </th>
+      <th colspan="2">Adres</th>
+      <th>
+        Resim
+      </th>
+  
+    <tr>
+      <td>
+        Mustafa
+      </td>
+      <td>
+        Yildirim
+      </td>
+      <td>
+        22
+      </td>
+      <td>Kocaeli</td>
+      <td>Erzurum</td>
+      <td>
+        <img src="https://picsum.photos/200/300" alt = "" style="width:50px; height: 50px;">
+      </td>
+    </tr>
+  </table>
+
+  <br><br>
+  <table style="width: 100%;" id="Tablo-2">
+    <tr>
+      <th>Ad:</th>
+      <td>Mustafa Yildirim</td>
+    </tr>
+
+    <tr>
+      <th rowspan="2">Telefon</th>
+      <td>12356</td>
+    </tr>
+    <tr>
+      <td>
+        2345345345345
+      </td>
+    </tr>
+
+
+  </table>
+</body>
+</html>

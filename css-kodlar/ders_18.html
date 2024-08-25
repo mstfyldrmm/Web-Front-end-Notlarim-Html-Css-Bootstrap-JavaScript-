@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity kavrami </title>
+    <!--Ayni elemani hedefleyen iki kuraldan hangisinini kullanilacagini belirlememizi saglar-->
+</head>
+<style>
+    body {
+        font-size: 32px;
+    }
+
+    div span {
+        color: rebeccapurple;
+    }
+
+    span {
+        color: aqua;
+    }
+
+    p {
+        color: pink;
+    }
+
+    #p1 {
+        color: brown;
+    }
+
+    .p2 {
+        color: chartreuse !important;
+        /*Eger illaki bu kural uygulanacak ise important kullanilir*/
+    }
+
+</style>
+<body>
+    <h2>Baslik h2</h2>
+    <p id="p1">paragraf 1</p> <!-- id daha onemli belirleyici oldugu icin rengi brown olur-->
+
+    <p id = "p1"class="p2">paragraf 2</p>
+    <!--id daha onemli belirleyici oldugu icin class ozellikleri olmaz -->
+
+    <p id = "p1" style="color:cyan">Paragraf 3</p>
+    <!--En onemli belirleyici inline dir.-->
+
+    <div>
+        <p>Bu etkilenmez</p>
+        <span>
+            Disaridaki span elemani
+            <span>
+                İcerideki span elemani
+            </span>
+        </span>
+    </div>
+    
+</body>
+</html>
+
+
+<!--
+Onem sirasi 
+1-<p style="color: red"></p>
+2-<p id="id"></p>
+3-class adi
+..
+..
+..
+-->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+    .paragraf1 {
+        color: burlywood;
+        background-color: black;
+        text-align: justify; /*textin bulundugu alanda sag ve sola esit olarak konumlanir.*/
+
+    }
+    
+    .paragraf2 {
+        text-transform: lowercase; /*tüm harfleri kucuk yapar*/
+        text-indent: 10px; /*paragraf baslangici icin bosluk miktari*/
+        letter-spacing: 3px; /*Her bir harf arasindaki bosluk miktari*/
+        line-height: 2; /*her bir satır arasındaki mesafe 2 katina cikar*/ 
+        word-spacing: 3px; /*Her bir kelime arasına koyulan bosluk*/
+        white-space: nowrap; /*Tum paragrafi tek satıra sıgdırır*/
+    }
+
+    .paragraf3 {
+        font-family: 'Shantell Sans', cursive;
+        font-size: 32px;
+    }
+</style>
+<body>
+    <!-- (p.paragraf$)*5 kısayol sonucu 
+     <p class="paragraf1"></p>
+    <p class="paragraf2"></p>
+    <p class="paragraf3"></p>
+    <p class="paragraf4"></p>
+    <p class="paragraf5"></p> 
+    -->
+    <p class="paragraf1" id="paragrafim1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda laborum aliquam, quidem aperiam sapiente quia dolorum officiis maiores omnis nihil.</p>
+    <p class="paragraf2" id="paragrafim2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde beatae atque sequi doloribus sint molestiae deleniti fugiat maiores consectetur dolorem deserunt, vero, eius incidunt nemo veritatis eligendi provident iure possimus.</p>
+    <p class="paragraf3" id="paragrafim3">Google fontu kullandık</p>
+    <p class="paragraf4" id="paragrafim4"></p>
+    <p class="paragraf5" id="paragrafim5"></p>
+    
+</body>
+</html>

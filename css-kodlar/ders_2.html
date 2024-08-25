@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container1 {
+        max-width: 600px;
+        min-width: 100px; /*Ekran durumuna gore kuculebilecegi max miktar daha kucuk olmaz*/
+        height: 80%;
+        margin: auto;
+        background-color: teal;
+    }
+
+    #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: coral;
+        margin: auto;
+        padding: 20px; /*padding ile birlikte suan 220px alan kaplar. Toplamda 200px kaplamasi icin box-sizing kullanılır*/
+        box-sizing: border-box; /*paddingle birlikte 200px olur*/
+
+    }
+</style>
+<body>
+    <div id="container1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dicta tenetur blanditiis fuga sequi assumenda quos deleniti quibusdam officiis, est adipisci eos dolor minima suscipit? Aliquam ab reiciendis eligendi assumenda, fuga dignissimos cupiditate laudantium cumque! Deleniti accusantium iusto illo, similique consequuntur eius provident, nemo reiciendis repudiandae omnis et, necessitatibus sit?</div>
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatum!</div>
+</body>
+</html>

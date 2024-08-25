@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font detay</title>
+    <style>
+        /*yereldeki fontlari kullanma*/
+        @font-face {
+            font-family: emre;
+            src: url('/fonts/Mali-Regular.ttf');
+            font-weight: normal;
+            /* font-display çeşitleri
+            1-block : Yereldeki font dosyasi getirilene kadar yazi gozukmez.
+            
+            2-swap: İstenilen font yoksa eger default olan font tipini kullanir. İstenilen font yuklenince degistirir.
+
+            3-fallback: Eger 3.1 s icinde font getirilirse yuklenir. Yoksa yazilari gostermez.
+
+            4-optional : Tarayici karar verir.
+            */
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: emre;
+            src: url('/fonts/Mali-Bold.ttf');
+            font-weight: bold;
+        }
+
+        body {
+            font-family: emre, cursive;
+            font-size: 2rem;
+        }
+    </style>
+        
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, dolorem cum! Eligendi nihil mollitia voluptatum iusto earum saepe aspernatur, dolorem accusamus odio officia perferendis inventore labore voluptate ab tenetur porro facere quibusdam molestias unde. Officiis rerum cumque quaerat provident deleniti odit eligendi, quidem molestias consequuntur expedita, porro corporis inventore ducimus.</p>
+</body>
+</html>

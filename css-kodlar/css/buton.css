@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #eee;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor:pointer;
+    border-radius: .4em;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+/*butonun tıklanma, üzerine gelinme durumlarında olabilecekler*/
+
+.btn:hover, .btn:focus {
+    background-color: #ddd;
+    box-shadow: 0 0 5px 0px #ccc;
+}
+
+.btnPrimary {
+    background-color: hsl(158, 80%, 50%);
+    box-shadow: 0 0 5px 0px hsl(158, 80%, 30%);
+    border-color: hsl(158, 80%, 40%);
+    color: white;
+}
+
+.btnPrimary:hover, .btn:focus {
+    background-color: hsl(158, 80%, 70%);
+    box-shadow: 0 0 5px 0px hsl(158, 80%, 30%);
+}
+
+.btnAccent {
+    background-color: hsl(23, 80%, 50%);
+    box-shadow: 0 0 5px 0px hsl(23, 80%, 60%);
+    border-color: hsl(23, 80%, 70%);
+    color:white
+}
+
+.btnAccent:hover, .btn:focus {
+    background-color: hsl(23, 80%, 40%);
+    box-shadow: 0 0 5px 0px hsl(23, 80%, 60%);
+}
+
+.btnDanger {
+    background-color: hsl(0, 87%, 53%);
+    box-shadow: 0 0 5px 0px hsl(0, 87%, 73%);
+    border-color: hsl(0, 87%, 63%);
+    color: white;
+}
+
+.btnDanger:hover, .btnDanger:focus {
+    background-color: hsl(0, 87%, 33%);
+    box-shadow: 0 0 5px 0px hsl(23, 80%, 43%);
+}
+
+.btnLarge {
+    font-size: 1.25em;
+}
+
+.btnSmall {
+    font-size: 0.75em;
+}
+
+.btnOval {
+    border-radius: 100000px;
+}

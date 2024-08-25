@@ -1,0 +1,46 @@
+html, body {
+    background-color: #1f1e1d;
+    margin: 10px;
+}
+
+.container div:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.container div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.container div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.container div:nth-child(4n) {
+    background-color: #ffcc5c;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(2, 100px);
+    /*Şuan herhangi bir responsive durum yok*/
+}
+
+.responsive1 {
+    grid-template-columns: repeat(auto-fit, 100px);
+    /*Bu sekilde ekran kuculdugunde zaman alt alta gecmesi saglanir*/
+
+    /*Bu yapının eksikligi ise 100px bosluk olmadıgı surece eleman yerlestirmemesidir. Ekranda surekli bır bosluk kalir*/
+}
+
+.responsive2 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*Su anlama gelir : Ekranda minumum 100px yer tutsun.
+    Eger daha fazla alan var ise fraction a gore alanını buyutsun*/
+
+    /*Suan 2.satirdan sonra olusacak elemanlar sadece kapladigi alan kadar yer kaplarlar.Çunku 2 satir tanım yaptik.*/
+
+    grid-auto-rows: 100px;
+    /*Eger 2 satirdan fazla eleman olusma durumu var ise otomatik olarak 100px genisliginde olustur.*/
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Property</title>
+    <style>
+        /*Animasyonun gerceklestigi anlara mudahale etmek*/
+
+        .div1 {
+            width: 100px;
+            height: 100px;
+            color: aliceblue;
+            font-size: 2rem;
+            background-color: red;
+        }
+
+        .div1:hover {
+            background-color: orangered;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;
+            
+            iteration-count: animasyonun kac defa tekrar edecegini belirler
+
+            direction:burda red yellow orange  orange yellow red yönünü saglar
+
+            fill-mode:
+            */
+            animation: renkDegistir 4s ease-in-out 1s 2 alternate, boyutDegistir 4s 1s 1 both;
+        }
+
+        @keyframes renkDegistir {
+            /* 0% {
+                
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: orangered;
+            } */
+
+            from {
+                background-color: red;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            to {
+                background-color: orangered;
+            }
+        }
+
+        @keyframes boyutDegistir {
+            to {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">div</div>
+</body>
+</html>

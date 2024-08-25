@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: red;
+    }
+    .container {
+        background-color: black;
+        padding: 1rem;
+        height: 250px;
+        width: 250px;
+    }
+
+    .span {
+        background-color: aqua;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+
+    .display {
+        display: none;
+    }
+</style>
+<body>
+    <!--Blok elementler parentin alani kadar yer kaplarken, inline elementler olduğu kadar yer kaplar ve sonra gelen elementler bir alt satıra gecmezler.
+    display:inline-block özelliği ile genişlik ve yükseklik ayarı yapilabilir hale gelirler
+
+    elementler display:none özelliği yapılırsa gözükmez
+    -->
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil, reiciendis saepe, quos eligendi quaerat tempora necessitatibus eaque numquam ex inventore voluptatum! Sed libero nulla asperiores. Aut labore veritatis iste optio, distinctio pariatur laborum quod amet facere libero tenetur et quis, ad quia dolore autem sint sit sed dolores maxime?
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rerum voluptas eaque at consequatur beatae ipsum commodi ad voluptatem, aperiam obcaecati quibusdam deleniti odit reiciendis recusandae consequuntur placeat dolorem eveniet natus porro distinctio. Eum, ducimus libero dolore repellat non adipisci. <span class="span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quaerat rem? Labore, voluptatum tempore veniam accusantium, id repellendus fugit ratione impedit laudantium sed suscipit ullam quae excepturi reiciendis eum rem. Quae explicabo tempore impedit, in facere omnis dolorum facilis vel similique dolores adipisci, aliquam modi tenetur! Fugit aliquam, obcaecati harum perspiciatis quaerat odit officiis. Totam facere corrupti fugit numquam, quo eius non amet expedita officiis accusamus ratione nobis, inventore ea laborum consequatur necessitatibus quam rem. Repudiandae, eos adipisci! Est illum nisi nesciunt accusamus? Odio reiciendis vero obcaecati voluptas quae veniam, exercitationem debitis quaerat eligendi dignissimos molestiae cum quidem aspernatur neque?</span></p>
+
+    <p class="display">Display none </p>
+
+    
+</body>
+</html>

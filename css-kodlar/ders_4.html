@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css olculeri</title>
+</head>
+<style>
+    /*default font-size ayarlama*/
+
+    html {
+        font-size: 32px;
+    }
+
+    .parent{
+        width: 300px;
+        border:2px red solid;
+    }
+
+    .item {
+        background-color: orangered;
+        height: 30px;
+        margin: 10px 0;
+    }
+
+    .item-yuzde {
+        width: 50%;
+    }
+
+    .itemViewWith {
+        width: 50vw;
+    }
+
+    .baba {
+        width: 300px;
+        border: 1px wheat solid;
+        background-color: rgb(12, 197, 160);
+    }
+    
+    .cocuk {
+        background-color: rgb(255, 0, 242);
+        height: 30px;
+        margin: 10px 0;
+    }
+    
+    .rem {
+        font-size: 1rem; /*default font size in katlarini alir*/
+    }
+
+    .em {
+        font-size: 1em;  /*parentin font size in katlarini alir.*/    
+    }
+
+
+</style>
+<body>
+    <!--  .parent>(.item)*2 -->
+    <div class="parent">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item-yuzde item">Parentin %50</div>
+    </div>
+    <div class="item-yuzde item">Parentin %50</div> <!--item sinifininda ozelliklerini kullandi(birden fazla sinif kullanilabilir.)-->
+    <div class="itemVievWith item">Padding ve margin olmadan ekranın %50 si</div>
+
+    <div class="baba">
+        <div class="cocuk rem">1 EM</div>
+        <div class="cocuk em">1 RM</div>
+    </div>
+    
+</body>
+</html>

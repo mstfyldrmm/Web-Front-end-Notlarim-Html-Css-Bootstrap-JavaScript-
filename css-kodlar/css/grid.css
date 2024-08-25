@@ -1,0 +1,92 @@
+.container {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffeead;
+    display: grid;
+    grid-template-columns: 100px auto 100px; /*1.sütüna 100px 2.sutuna auto 3.sutuna 100px olsun*/
+    grid-template-rows: 150px 200px;
+    column-gap: 10px; /*sütünlar arası bosluk bırakmayı saglar*/
+    row-gap: 10px;
+}
+
+/*repeat kavramı*/
+.deneme1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffeead;
+    display: grid;
+    grid-template-columns: repeat(4, 50px); /*50px 50px 50px 50px kısaltılmısı*/
+    grid-template-rows: repeat(4, 50px);
+    column-gap: 10px; /*sütünlar arası bosluk bırakmayı saglar*/
+    row-gap: 10px;
+}
+
+/*fraction kavramı : Grid elemanlarini ekranın boyutuna gore duzenler. Avantaji ekranını buyuyup kuculmesine gore boyutu degisir*/
+
+.deneme2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffeead;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr; /*genislik 300px 1 satira 150px 1 satir 150px yapti*/
+    height: 300px;
+}
+
+.deneme3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 240px 40px;
+    gap: 3px;
+}
+
+/*Header alanının kaplayacağı alanı belirleme*/
+
+.header {
+    grid-column-start: 5;
+    grid-column-end: 13;
+
+    grid-column:1 / 13;
+
+    grid-column: 1 / -1;
+    /*hepsi aynı alanı tahsis eder*/
+
+    grid-column: 5 / -1;
+}
+
+.footer {
+    grid-column: 1 / span 12;
+}
+
+.menu {
+    grid-column: 1 / span 4;
+    grid-row: 1 / 3;
+    
+}
+
+.content {
+    grid-column: 5 / -1;
+}
+
+
+
+html, body {
+    background-color: #1f1e1d;
+    margin:10px;
+}
+
+.container div:nth-child(1n){
+    background-color: #96ceb4;
+}
+
+.container div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.container div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.container div:nth-child(4n) {
+    background-color: #ffcc5c;
+}

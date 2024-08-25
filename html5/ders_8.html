@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url("https://resimdiyari.com/_data/i/upload/2012/10/11/20121011142538-0d933501-me.jpg");
+      background-repeat: no-repeat; 
+      background-size: "50% 100%";
+      background-attachment: fixed;
+
+    }
+  </style>
+</head>
+<body>
+  <p>Arka planda ayni resmin birden fazla tekrarlanmamasi icin background-repeat : no-repeat
+    cover ile resim tum ekrana yayilir.
+    Herhangi bir bosluk kalmamasi icin fixed
+    50% ve 100% ekranin genislik olarak yarisini yukseklik olarak ise tamamini alir
+    min 650px ustu ise ilk resim,
+    eger 250 pix ustu 650px alti ise 2.resim
+    hicbirine uymaz ise default resim acilir
+  </p>
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://ae01.alicdn.com/kf/HTB1vhXiSVXXXXauXXXXq6xXFXXX2/Kalp-arkaplan-foto-raf-st-dyosu-foto-raf-arka-plan-fon-XT-5980.jpg_Q90.jpg_.webp">
+    <source media="(min-width: 250px)" srcset="data:image/jpeg;base64,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">
+    <img src="https://resimdiyari.com/_data/i/upload/2012/10/11/20121011142538-0d933501-me.jpg">
+  </picture>
+</body>
+</html>

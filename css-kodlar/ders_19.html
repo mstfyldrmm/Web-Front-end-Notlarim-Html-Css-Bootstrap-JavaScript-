@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector kavramı</title>
+    <style>
+        /* p span {
+            color: brown;
+        } p etiketinin spanlerinin rengini degistirir*/
+        /* div span {
+            color: brown;
+        }  div icerisindeki !!!!!tum spanlarin rengini degistirir. */
+        div span {
+            color: red;
+        }
+
+        div > span {
+            color:blue
+        }
+        /*div in direk cocugu olan spanlerin rengini degistirir*/
+
+        h2 ~ p {
+            background-color: chocolate;
+        }
+        /* h2 ile ayni seviyede olan p etiketlerinin arka plan rengini degistirir. Baska tabirle h2 ile kardes olan p nin seviyesini degistirir.
+        h2 den oncekiler icin gecerli degildir.
+         */
+        p ~ div {
+            background-color: aquamarine;
+        }
+
+        div ~ p {
+            background-color: crimson;
+        }
+
+        div + p {
+            background-color: darkblue;
+        }
+        /* div den hemen sonra gelen p etiketleri için gecerlidir. */
+
+        h2:not(.h2sinif) {
+            color: chartreuse;
+        }
+        /* class i h2sinif olmayan h2 etiketlerini etkiler
+        checkbox icin kullanilabilir 
+        */
+        input:not(:checked) {
+            margin: 20px;
+        }
+
+        input[type = "text"] {
+            background-color: red;
+        }
+
+        input[type] {
+            /*inputlarda type gecenleri etkiler*/
+            background-color: brown;
+        }
+
+        input[data-margin] {
+            background-color: yellow;
+        } /*inputlarda data-margin olanlari etkiler*/
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input data-margin = "20" type="text">
+    <input type="text">
+    <p>h2 oncesi p etiketi kardes sayilmaz</p>
+    <h2 class="h2sinif" id="h2ID">Baslik h2</h2>
+    <h2>h2sinif ait olmayan h2 etiketi</h2>
+    <p class="paragrafSinif">Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <div>
+        <p>Bu etkilenmeyecek</p>
+        <span>
+            Disaridaki span elementi
+            <span>İcerideki span elementi</span>
+        </span>
+        <p>Bu etlilenecek</p>
+        <span>2.span</span>
+    </div>
+    <p>Div etiketinden hemen sonra geldim</p>
+    <p>paragraf 3</p>
+    <p>Paragraf 4</p>
+    <div>div2</div>
+    <p>Div etiketinden sonra gelen p etiketiyim</p>
+    <p>paragraf 5</p>
+</body>
+</html>

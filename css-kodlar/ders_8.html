@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 500px;
+        border: solid 1px black;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row; /*default olarak row olur. row-reverse ile elemanlari tersten yerlestirir*/
+        align-items: center; 
+        /*flex-end ozelligini start yapilarak fark anlasilabilir*/
+        /*default olarak itemlarin alana yayilmasini saglar. Row ise elemanlarin dikey olarak siralanmasini, column ise itemlarin yatay olarak dizilimini duzenler*/
+        align-content: end; /*aling-,items ilgili satirla islem yaparken content ise tum satirlarda islemi yapar*/
+        justify-content: space-around ; /*row ise yatay olarak elemanlari duzenler column ise dikey olarak elemanlari duzenler*/
+
+        /*space-around: itemlarin aralarinda esit olarak bosluk birakmasini saglar*/
+        /*space-between: Ilk ve son elemanlari alanin sonlarina yayar. Ortada kalanlari esit sekilde bosluk birakir.*/
+
+        /*itemlarin tasmasini onlemek icin overflow:hidden kullanilabilir. Ama icerik kisitlamasina sebep verir. Bu sebeple flex-wrap kullanilir*/
+        flex-wrap: wrap;
+        /*Ornegin 3 item yatay olarak sigmazsa itemlari alt satirlarda gosterir*/
+
+
+    }
+
+    .item {
+        min-height: 100px;
+        min-width: 200px;
+        background-color: orange;
+        margin: 10px;
+
+    }
+
+    .item1 {
+        /*eger margin-top : 20px olsaydı toplamda (10px tum itemlarda var) 30px bir margin olmazdi. En buyuk margin buyuklugunu alirdi yani 20px margin olur.*/
+        height: 120px;
+    }
+
+    .item2 {
+        height: 150px;
+    }
+
+    .item3 {
+
+    }
+</style>
+<body>
+    <!--
+        .container>(.item.item${$})*3
+    -->
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item1">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-margin-padding</title>
+</head>
+<style>
+    #p1{
+        border-style: solid;
+        border-style: inherit;
+        border-style: outset;
+        border-color: aqua;
+        border-width: 5px;
+        padding: 20px;
+        /*tek satırda yazmak için*/
+        border: 5px, solid, aqua, 
+    }
+
+    #p2 {
+        border:5px gold solid;
+        border-width: 10px 30px; /*Yukarıdan ve asagidan 10px, sagdan ve soldan ise 30px*/
+        margin: 50px 40px; /*Yukarıdan ve asagidan 50px, sagdan ve soldan 30px  */
+    }
+
+    #p3{
+        border: 5px;
+        border-top: 5px, red, solid;
+        border-bottom: 20px rebeccapurple solid;
+        padding: 20px;
+    }
+
+    #p4 {
+        border: 5px rgb(255, 0, 85) solid;
+        border-radius: 10px;
+        padding: 15px;
+
+    }
+
+    #p5{
+        border: 5px royalblue solid;
+        border-top-left-radius: 10px; /*sol ust koseyı yumusatir.*/
+        padding: 15px;
+    }
+
+    #orta {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        padding: 50px;
+        background-color: bisque;
+
+        /*Yapi, paddinge gore buyuyup kuculebilir durumdadır. Bunu onune gecmek için box-sizing: border-box kullanılır.*/
+    }
+    /*margin, diger elemanlar arasindaki duzeni saglar.*/
+</style>
+<body>
+    <p id="p1">Bu paragraf 1</p>
+    <p id="p2">Bu paragraf 2</p> <!-- #p2 diyerek kısa yoldan olusturulur . -->
+    <p id="p3">Bu paragraf 3</p>
+    <p id="p4">Bu paragraf 4</p>,
+    <p id="p5">Bu paragraf 5</p>
+    <div id="orta">Ortalanacak yapi</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        .div1 {
+            margin: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 2rem;
+            transform-origin: 0 0;
+            /*baslangic noktasi etrafinda doner*/
+        }
+
+        .div1:hover {
+            /* 1-TRANSLATE
+            1-transform: translateX(50px);
+             50px x yonunde saga kaydırır
+             
+            2- transform: translateY(20px);
+             20px y ekseninde asagi kaydirir
+
+            3-transform: translate(100%);
+            kendi boyutu kadar x ekseninde  saga kaydirir
+
+            4-transform: translate(50px, 50px);
+            50px x ekseninde, 10px y ekseninde kaydırır
+            */
+            transition: 2s;
+            transform: rotate(2turn);
+            /* ROTATE
+            transform: rotate(180deg); 180 derece etrafinda doner.
+
+            transform: rotateX(2turn) x ekseni etrafinda 2 tur atar
+
+            rotate islemleri orijinde gerceklesir. Eger orijin disinda bir nokta etrafinda donmesini istersek ---> transform-origin
+
+            SCALE
+            transform: scaleX(2); x ekseninde 2 katina cik. Yani genisligini 2 katina cikarir
+
+            transform: scale(2, 2); x ve y ekseninde boyutunun 2 katina cikarir.Yani genisligini ve yuksekligini 2 katina cikartir
+            örn: 50% 50% orijin etrafinda doner.
+            */
+            
+            
+
+
+        } 
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Div1
+    </div>
+</body>
+</html>

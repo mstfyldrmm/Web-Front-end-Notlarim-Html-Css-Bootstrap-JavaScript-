@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox item ozellikler</title>
+</head>
+<style>
+    .container {
+        height: 500px;
+        border: solid 1px black;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .item {
+        min-width: 100px;
+        min-height: 100px;
+        background-color: orange;
+        margin: 10px;
+    }
+
+    .item1 {
+        flex-grow: 0;
+        order: 2;
+        flex-shrink: 1;
+        align-self: center; /*sadece ilgili item i etkiler.*/
+    }
+
+    .item2 {
+        flex-grow: 1;
+        flex-basis: 0;
+        order: 3;
+        flex-shrink: 2; /*item2 daha hizli kuculur 0 denirse hic kuculmez*/
+    }
+
+    .item3{
+        flex-grow: 2;
+        flex-basis: 0;
+        order: 1;
+        flex-shrink: 1;
+    }
+
+    /*flex-basis: item1 kapladigi alan harici kalan alani item2 ve  item3 kullanmasını saglar
+    order: itemlara numara verir.
+    flex-shrink : Ekran kuculurken itemlarin daralma oranıdır.
+
+
+    */
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    
+</body>
+</html>

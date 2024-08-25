@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root {
+            --ana_renk : teal;
+            --sayfa_rengi:white;
+            --my_border: 1px solid rgb(0, 255, 115);
+        }
+
+        body {
+            background-color: var(--sayfa_rengi);
+        }
+
+        h2 {
+            background-color: red;
+            color: blue;
+            padding: 5rem;
+            border: var(--my_border);
+        }
+
+        p {
+            --ana_renk: orange;
+            /*ana_renk sadece p etiketi icin degisir.
+            Diger etiketlerde kullanılırsa teal rengindedir
+            */
+            color: var(--ana_renk);
+        }
+    </style>
+</head>
+<body>
+    <h2>Başlık</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, quisquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quibusdam! Unde natus expedita vel neque? Odio velit ut delectus sed?</p>
+
+    <button>Tıkla arka plan rengini degistireyim</button>
+
+    <script>
+        const buton = document.querySelector('buton').addEventListener('click', ()=> {
+            document.documentElement.style.setProperty('--sayfa_rengi', 'pink');
+        })
+    </script>
+
+</body>
+</html>

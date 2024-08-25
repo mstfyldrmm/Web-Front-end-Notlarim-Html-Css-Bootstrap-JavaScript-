@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 32px;
+            height: 200vh;
+            margin: 1rem;
+            border: 2px solid red;
+        }
+    
+        .parent {
+            border: 2px solid blue;
+            padding: 2rem;
+            background-color: chocolate;
+            position: relative;
+        }
+        
+        .item1 {
+            background-color: blueviolet;
+            padding: 2rem;
+            position: relative;
+            top: 10px;
+            left: 20px; /*Relative de bu degerlerden sadece ilgili element etkilenir. Diger elementler etkinlenmez*/
+        }
+
+        .item2 {
+            background-color: teal;
+            padding: 2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*absolute, elemana en yakın pozisyon degeri relative olan elemana gore kendini konumlandirir. Eger relative elemana sahip EBEVEYNİ yoksa tum ekran gore kendini konumlandirir*/
+        }
+
+        .item3 {
+            background-color: gold;
+            padding: 2rem;
+            position: fixed;
+            /*fixed ile relative farkı, relative sayfa kaydırılınca hareket ederken fixed, fiks olarak kaydırılsa dahi ekranda aynı yerinde kalır*/
+        }
+
+        .item4 {
+            background-color: aqua;
+            padding: 2rem;
+            position: sticky;
+            /*sticky, relative ile fixed ın karisimidir.
+            Genellikle menu sticky olur.*/
+
+            /*z index ise elemanlari siralamayi saglar*/
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Ana Tasıyıcı
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">Item3</div>
+        <div class="item4">Item4</div>
+        <div class="item1">Item3</div>
+        <div class="item1">Item3</div>
+        <div class="item1">Item3</div>
+    </div>
+</body>
+</html>

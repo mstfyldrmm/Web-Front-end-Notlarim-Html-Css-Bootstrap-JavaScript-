@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#get">
+    <label for="ad">Adinizi giriniz</label>
+    <input type="text" id="ad"><br><br>
+
+    <label for="soyad">Soyadinizi giriniz</label>
+    <input type="text" name="" id="soyad"><br><br>
+
+    <input type="radio" name="cinsiyet" value="erkek" id="e">
+    <label for="e">Erkek</label>
+    <!-- Secildiginde deger olarak value degerlerini dondurur-->
+    <input type="radio" name="cinsiyet" value="kadin" id="k">
+    <label for="k">Kadin</label><br><br><br>
+
+    <input type="checkbox" name="renkler" id="m" value="m">
+    <label for="m">Mavi</label>
+
+    <input type="checkbox" name="renkler" id="k" value="k">
+    <label for="k">Kirmizi</label>
+
+    <input type="checkbox" name="renkler" id="y" value="y">
+    <label for="y">Yesil</label><br><br>
+
+    <input type="submit" value="Gonder">
+    <input type="reset" value="Formu sil">
+    <input type="button" onclick="alert('Merhaba')" value="Normal buton">
+
+    <!-- Birden fazla secim icin multiple kullanilir-->
+    <label for="">Kan grubunuzu seciniz</label>
+    <select name="kanGrubu" id="kanGrubu" size="2" multiple>
+      <option value="">A Rh+</option>
+      <option value="">A Rh-</option>
+      <option value="">AB Rh+</option>
+      <option value="">AB Rh-</option>
+      <option value="">0 Rh+</option>
+      <option value="">0 Rh-</option>
+    </select><br><br><br>
+
+    <label for="area">Adres</label>
+    <textarea name="adres" id="area" cols="30" rows="10"></textarea>
+
+  </form>
+</body>
+</html>

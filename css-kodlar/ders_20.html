@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementler</title>
+    <style>
+        /* :: olunca sozde element oluyor*/
+        p::first-letter {
+            font-size: 6rem;
+            color: brown;
+        }
+        /*Paragrafin ilk harfini etkiler*/
+
+        p::first-line {
+            background-color: chartreuse;
+        }
+        /*paragrafin ilk satirini etkileyen pseudo element*/
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box::after {
+            background-color: blue;
+            display: block;
+            content: ' ';
+            width: 20px;
+            height: 20px;
+            
+        }
+
+        .box::before {
+            content: ' ';
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-color: chartreuse;
+        }
+
+        /*Before-after box iceriginin oncesi ve sonrasinda gelecek icerikler. Yani box in ustune veya altina gelmez. Box icindeki icerigin oncesi ve sonrasina gelir.*/
+
+    </style>
+</head>
+<body>
+   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At vitae, accusamus quas quae minus soluta officiis. Fuga libero vitae, dolore autem necessitatibus a blanditiis quis fugit. Consequuntur ratione suscipit tempora sit ipsa facilis modi dolor dicta, voluptate maiores quos magnam necessitatibus error voluptas impedit laborum adipisci recusandae amet hic dolores.</p>
+
+   <div class="box"></div>
+</body>
+</html>
+
+
+
+<!--
+    Pseudo element genellikle animasyonlar icin kullanilir.
+
+-->
